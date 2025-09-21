@@ -1,6 +1,6 @@
 """
-Problem: Two Sum (https://leetcode.com/problems/two-sum/)
-Difficulty: Easy
+Problem: Two Sum (LeetCode #1, Easy)
+Link: https://leetcode.com/problems/two-sum/
 Category: Array / Hash Table
 
 Thoughts:
@@ -13,8 +13,8 @@ Approach:
 - Use a dictionary to store numbers and their indices.
 - For each number, check if target - num exists in the map.
 
-Time Complexity: O(n)
-Space Complexity: O(n)
+Time Complexity: O(n) as the list is scanned once
+Space Complexity: O(n) because a dictionary is used to store complements
 """
 
 from typing import List
