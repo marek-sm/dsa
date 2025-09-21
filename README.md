@@ -8,6 +8,7 @@ The focus is on writing clear, efficient, and well-documented solutions — not 
 
 ## 📂 Repository Structure
 
+```text
 dsa/
 ├── leetcode/
 │ ├── easy/
@@ -27,7 +28,7 @@ dsa/
 │ └── dynamic_programming/
 ├── tests/
 └── notes/
-
+```
 
 - **`leetcode/`** → Solutions grouped by difficulty (easy, medium, hard). Each file includes problem statement, explanation, time/space complexity, and key data structures/algorithms used.  
 - **`data_structures/`** → Implementations of core data structures from scratch.  
