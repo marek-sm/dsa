@@ -21,8 +21,6 @@ Solution 2 (Built-in .find()):
 - Use Python's built-in string method .find() to locate the needle in the haystack.
 """
 
-from typing import List
-
 # -----------------------------
 # Solution 1: Brute Forcing / Naive Search - my solution
 # Time Complexity: O(M*N), Space Complexity: O(1)

@@ -25,8 +25,6 @@ Solution 2 (One-Pass Optimal) - not my solution:
 - This naturally handles all subtractive cases without explicit checks.
 """
 
-from typing import List
-
 # -----------------------------
 # Solution 1: Two-Pass with Adjustments - my solution
 # Time Complexity: O(n), Space Complexity: O(1)

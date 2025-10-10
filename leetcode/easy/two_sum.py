@@ -4,17 +4,17 @@ Link: https://leetcode.com/problems/two-sum/
 Category: Array / Hash Table
 
 Thoughts:
-- Used a brute force method in the past, which is O(n^2).
+- Used a brute force method in the past, which is O(N^2).
 - In this solution I utilized a hash map / dictionary to store previously seen numbers.
-- This allows for O(1) average time complexity lookups allowing a O(n) time complexity.
+- This allows for O(1) average time complexity lookups allowing a O(N) time complexity.
 - While a dictionary uses more space, it is worth the trade-off for the time complexity improvement.
 
 Approach:
 - Use a dictionary to store numbers and their indices.
 - For each number, check if target - num exists in the map.
 
-Time Complexity: O(n) as the list is scanned once
-Space Complexity: O(n) because a dictionary is used to store complements
+Time Complexity: O(N) as the list is scanned once
+Space Complexity: O(N) because a dictionary is used to store complements
 """
 
 from typing import List
