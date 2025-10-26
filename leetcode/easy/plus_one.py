@@ -14,7 +14,7 @@ Approach:
 - If the current digit is not 9, add one to it and return the modified list.
 - If the loop completes and all digits were 9, we need to add a new digit at the beginning of the list (1 followed by zeros).
 
-Time Complexity: O(N))
+Time Complexity: O(N)
 Space Complexity: O(1)
 """
 
