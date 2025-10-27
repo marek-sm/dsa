@@ -8,17 +8,21 @@ Thoughts:
 - In this solution I utilized a hash map / dictionary to store previously seen numbers.
 - This allows for O(1) average time complexity lookups allowing a O(N) time complexity.
 - While a dictionary uses more space, it is worth the trade-off for the time complexity improvement.
+- The time complexity is O(N) as the list is scanned once.
+- The space complexity is O(N) because a dictionary is used to store complements.
 
 Approach:
 - Use a dictionary to store numbers and their indices.
 - For each number, check if target - num exists in the map.
-
-Time Complexity: O(N) as the list is scanned once
-Space Complexity: O(N) because a dictionary is used to store complements
 """
 
 from typing import List
 
+# -----------------------------
+# Solution: Hash Map - my solution
+# Time Complexity: O(N)
+# Space Complexity: O(N)
+# -----------------------------
 class Solution:
     def twoSum(self, nums: List[int], target: int) -> List[int]:
         pastNums = {}
@@ -28,6 +32,8 @@ class Solution:
                 return [pastNums[complement], index]
             else:
                 pastNums[num] = index  
+
+
 
 if __name__ == "__main__":
     sol = Solution()

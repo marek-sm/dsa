@@ -23,7 +23,8 @@ Solution 2 (Built-in .find()):
 
 # -----------------------------
 # Solution 1: Brute Forcing / Naive Search - my solution
-# Time Complexity: O(M*N), Space Complexity: O(1)
+# Time Complexity: O(M*N)
+# Space Complexity: O(1)
 # -----------------------------
 class Solution:
     def strStr(self, haystack: str, needle: str) -> int:
@@ -38,7 +39,8 @@ class Solution:
 
 # -----------------------------
 # Solution 2: Built-in .find() - Simple Python Method
-# Time Complexity: O(M+N), Space Complexity: O(1)
+# Time Complexity: O(M+N)
+# Space Complexity: O(1)
 # -----------------------------
 class SolutionTwo:
     def strStr(self, haystack: str, needle: str) -> int:

@@ -9,6 +9,8 @@ Thoughts:
 - I could then build the common prefix string character by character until a mismatch is found.
 - As soon as this happens, I could return the string as built so far.
 - After submitting, I realized that I needed to adjust for lists with one or less strings, as the j variable would be undefined.
+- The time complexity is O(M*N) as I may need to check M characters for N strings in the worst case.
+- The space complexity is O(1) as I only use a constant amount of extra space.
 
 Approach:
 - Find the length of the shortest string in the list.
@@ -17,16 +19,14 @@ Approach:
 - If all characters match, append to the result string.
 - If a mismatch is found, return the result string immediately.
 - If no mismatches are found, return the result string after the loop.
-
-Time Complexity: O(M*N) because I iterate through M characters for N strings
-Space Complexity: O(1) as I use a constant amount of variables
 """
 
 from typing import List
 
 # -----------------------------
 # Solution: Vertical Scanning - my solution
-# Time Complexity: O(M*N), Space Complexity: O(1)
+# Time Complexity: O(M*N)
+# Space Complexity: O(1)
 # -----------------------------
 class Solution:
     def longestCommonPrefix(self, strs: List[str]) -> str:
@@ -40,6 +40,8 @@ class Solution:
                     return finalString
             finalString += strs[j][i]
         return finalString
+
+
 
 if __name__ == "__main__":
     sol = Solution()

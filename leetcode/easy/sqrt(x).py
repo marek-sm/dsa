@@ -7,6 +7,8 @@ Thoughts:
 - I initially thought to try each integer by iterating through them in a linear fashion until the square exceeds x.
 - I then realized this would be relatively slow for large x, with a time complexity of O(sqrt(N)).
 - I then realized binary search would be the optimal option, as integers are sorted by default.
+- The time complexity is O(log(N)) because we halve the search space with each iteration.
+- The space complexity is O(1) as we use a constant amount of variables.
 
 Approach:
 - Use binary search between 0 and x//2 + 1 (as the square root of x cannot be larger than x/2 for x > 1).
@@ -32,6 +34,8 @@ class Solution:
             else:
                 lo = mid + 1
         return hi
+
+
 
 if __name__ == "__main__":
     sol = Solution()

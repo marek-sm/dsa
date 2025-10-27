@@ -8,6 +8,8 @@ Thoughts:
 - I then thought of manually removing duplicates, but that would take extra time and space and is unnecessary.
 - Finally, I realized I could use two pointers to update the array in place when a unique number is found.
 - The first pointer (i) would iterate through the array, while the second pointer (k) would track the position to place the next unique number.
+- The time complexity is O(N) because I iterate through N elements in the array.
+- The space complexity is O(1) as I use a constant amount of variables.
 
 Approach:
 - Initialize a pointer k to 1, which will track the position of the next unique element.
@@ -17,16 +19,14 @@ Approach:
 - Assign the current element to the position indicated by k and increment k.
 - After the loop, k will represent the number of unique elements in the array.
 - Return k as the result.
-
-Time Complexity: O(N) because I iterate through N elements in the array
-Space Complexity: O(1) as I use a constant amount of variables
 """
 
 from typing import List
 
 # -----------------------------
 # Solution: Two Pointers - my solution
-# Time Complexity: O(N), Space Complexity: O(1)
+# Time Complexity: O(N)
+# Space Complexity: O(1)
 # -----------------------------
 class Solution:
     def removeDuplicates(self, nums: List[int]) -> int:
@@ -36,6 +36,8 @@ class Solution:
                 nums[k] = nums[i]
                 k += 1
         return k
+
+
 
 if __name__ == "__main__":
     sol = Solution()

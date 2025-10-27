@@ -23,7 +23,8 @@ Solution 2 (Stack-based Parenthesis Matching) - not my solution
 
 # -----------------------------
 # Solution 1: Stack-based Parenthesis Validation (index-based) - my solution
-# Time Complexity: O(N), Space Complexity: O(N)
+# Time Complexity: O(N)
+# Space Complexity: O(N)
 # -----------------------------
 class Solution:
     def isValid(self, s: str) -> bool:
@@ -44,7 +45,8 @@ class Solution:
 
 # -----------------------------
 # Solution 2: Stack-based Parenthesis Matching - not my solution
-# Time Complexity: O(N), Space Complexity: O(N)
+# Time Complexity: O(N)
+# Space Complexity: O(N)
 # -----------------------------
 class SolutionTwo:
     def isValid(self, s: str) -> bool:
@@ -60,7 +62,6 @@ class SolutionTwo:
             else:
                 return False              # invalid character (optional)
         return not stack
-
 
 
 

@@ -9,6 +9,8 @@ Thoughts:
 - This would allow me to do the operation in-place with O(1) extra space.
 - After I wrote the solution, I researched if there was any more optimal solution, and there is one.
 - It is sometimes faster because it minimizes the number of writes to the array by swapping elements equal to val with the last element in the current valid range.
+- The time complexity is O(N) as we may need to check each element in the array.
+- The space complexity is O(1) as we use a constant amount of extra space.
 
 Approach:
 
@@ -25,7 +27,8 @@ from typing import List
 
 # -----------------------------
 # Solution 1: Two Pointer Overwrite - my solution
-# Time Complexity: O(N), Space Complexity: O(1)
+# Time Complexity: O(N)
+# Space Complexity: O(1)
 # -----------------------------
 class Solution:
     def removeElement(self, nums: List[int], val: int) -> int:
@@ -51,6 +54,8 @@ class SolutionTwo:
             else:
                 i += 1
         return n
+
+
 
 if __name__ == "__main__":
     sol = Solution()

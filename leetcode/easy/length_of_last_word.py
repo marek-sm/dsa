@@ -21,7 +21,8 @@ Solution 2 (Two Pointers) - not my solution
 
 # -----------------------------
 # Solution 1: Split-based - my solution
-# Time Complexity: O(N), Space Complexity: O(N)
+# Time Complexity: O(N)
+# Space Complexity: O(N)
 # -----------------------------
 class Solution:
     def lengthOfLastWord(self, s: str) -> int:
@@ -30,7 +31,8 @@ class Solution:
 
 # -----------------------------
 # Solution 2: Two Pointers - not my solution
-# Time Complexity: O(N), Space Complexity: O(1)
+# Time Complexity: O(N)
+# Space Complexity: O(1)
 # -----------------------------
 class SolutionTwo:
     def lengthOfLastWord(self, s: str) -> int:

@@ -25,7 +25,8 @@ Solution 2 (Half Reverse):
 
 # -----------------------------
 # Solution 1: Slicing - my solution
-# Time Complexity: O(N), Space Complexity: O(N)
+# Time Complexity: O(N)
+# Space Complexity: O(N)
 # -----------------------------
 class Solution:
     def isPalindrome(self, x: int) -> bool:
@@ -33,7 +34,8 @@ class Solution:
 
 # -----------------------------
 # Solution 2: Half-Reverse (Optimal) - not my solution
-# Time Complexity: O(N), Space Complexity: O(1)
+# Time Complexity: O(N)
+# Space Complexity: O(1)
 # -----------------------------
 class SolutionPalindromeOptimal:
     def isPalindrome(self, x: int) -> bool:
@@ -44,6 +46,8 @@ class SolutionPalindromeOptimal:
             reversed_half = reversed_half * 10 + x % 10
             x //= 10
         return x == reversed_half or x == reversed_half // 10
+
+
 
 if __name__ == "__main__":
     sol = Solution()

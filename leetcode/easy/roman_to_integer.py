@@ -27,7 +27,8 @@ Solution 2 (One-Pass Optimal) - not my solution:
 
 # -----------------------------
 # Solution 1: Two-Pass with Adjustments - my solution
-# Time Complexity: O(n), Space Complexity: O(1)
+# Time Complexity: O(N)
+# Space Complexity: O(1)
 # -----------------------------
 class Solution:
     def romanToInt(self, s: str) -> int:
@@ -57,7 +58,8 @@ class Solution:
 
 # -----------------------------
 # Solution 2: One-Pass Optimal - not my solution
-# Time Complexity: O(n), Space Complexity: O(1)
+# Time Complexity: O(N)
+# Space Complexity: O(1)
 # -----------------------------
 class SolutionOnePass:
     def romanToInt(self, s: str) -> int:
@@ -75,6 +77,8 @@ class SolutionOnePass:
             else:
                 result += curr
         return result
+
+
 
 if __name__ == "__main__":
     sol = Solution()
