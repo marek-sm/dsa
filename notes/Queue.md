@@ -44,11 +44,12 @@ A queue is a FIFO (first in, first out) data structure, meaning that the first n
 
 ## Quick test plan I used
 
-- When the queue is created it should have no nodes, the peek_front() method should return False, and the is_empty() method as well as the head and tail nodes should return None.
+- When the queue is created it should have no nodes, the is_empty() method should return True, and the peek_front() method as well as the head and tail nodes should return None.
 - The enqueue method should successfully add a node to the end of the queue and the peek_front method should successfully return the head node value.
 - The dequeue method should successfully remove the head node.
 - The dequeue method should handle the case in which there are no nodes in the queue.
 - The enqueue method should function as expected even if the queue is empty.
+- The is_empty() method should return False when there are nodes in the queue.
 
 ## Sources I skimmed
 
